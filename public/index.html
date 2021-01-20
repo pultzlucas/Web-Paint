@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/icons/favicon.png" type="image/x-icon">
+    <script src="../src/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../src/css/positions.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Paint Program</title>
+</head>
+<body>
+    <div class="content">
+        <div class="row tools-panel">
+            <ul class="tools">
+                <li class="tool pencil" title="Pencil">
+                    <button class="tool-btn" type="button"><img src="../src/icons/pencil-icon.png" alt="Pencil" ></button>
+                    <button class="config-pencil" type="button"><img src="../src/icons/down-arrow.png" alt=""></button>
+                    
+                    <div class="config-pencil-popup hidden">
+                        <div class="config-pencil-content">
+                            <label for="input_color">Color:</label>
+                            <input type="color" id="pencil_color">
+                
+                            <label for="pencil_size">size:</label>
+                            <input type="range" id="pencil_size" step="1" min="1" max="30">
+                        </div>
+                    </div>
+                </li>
+                <li class="tool eraser" title="Eraser">
+                    <button class="tool-btn" type="button"><img src="../src/icons/eraser-tool.png" alt="Eraser"></button>
+                    <button class="config-eraser" type="button"><img src="../src/icons/down-arrow.png" alt=""></button>
+                    
+                    <div class="config-eraser-popup hidden">
+                        <div class="config-pencil-content">
+                            <label for="eraser_size">size:</label>
+                            <input type="range" id="eraser_size" step="1" min="1" max="20">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        
+        
+        <canvas contenteditable="true"></canvas>
+
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

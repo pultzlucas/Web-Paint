@@ -1,0 +1,42 @@
+body
+{
+    cursor: unset;
+    font-family: sans-serif;
+}
+
+.tools
+{
+    list-style: none;
+}
+
+.tools button
+{
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.tools button:hover
+{
+    border:2px solid #aaa;
+}
+
+.config-pencil-popup, .config-eraser-popup
+{
+    border-radius:  5px;
+    border: 2px solid #aaa;
+}
+
+.config-pencil-content, .config-eraser-popup
+{
+    background-color: #eee;
+}
+
+canvas
+{
+    cursor: crosshair;
+    border-radius: 10px;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    box-shadow: 3px 3px 5px #aaa;
+}
